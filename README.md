@@ -1,7 +1,8 @@
 # com.piton.workFollow
 Görev Takip Uygulaması
 -------------
- Bu Uygulama, kullanıcının kendine görevler eklediği silebildiği ve görevlerine başlayıp bitiebildiği bir uygulamadır.
+ - Bu Uygulama, kullanıcının kendine görevler eklediği silebildiği ve görevlerine başlayıp bitirebildiği bir uygulamadır.
+ - Kullanıcı, eklediği görevleri günlük, haftalık veya aylık olarak listeleyebilmektedir.
  
 - Sarı renkli olan görevler başlanmış ve henüz tamamlanmamış görevlerdir.
 - Mavi renkli olan görevler henüz başlanmamış ve günü gelmemiş görevlerdir.
