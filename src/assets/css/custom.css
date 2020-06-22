@@ -1,0 +1,617 @@
+body {
+  background-color: #f3f3f3;
+  font-size: 0.875em;
+  overflow-x: hidden;
+  color: #353c4e;
+  font-family: "Open Sans", sans-serif;
+}
+
+.full-width {
+  width: 100% !important;
+}
+.full-height {
+  height: 100% !important;
+}
+
+/*====== Display css starts ======*/
+.d-none {
+  display: none;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+/*====== display css ends ======*/
+
+/*====== Border-radius css starts ======*/
+.b-radius-0 {
+  border-radius: 0px !important;
+}
+
+.b-radius-5 {
+  border-radius: 5px !important;
+}
+
+.b-radius-10 {
+  border-radius: 10px !important;
+}
+/*====== Border-radius css ends ======*/
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 1px 11px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  margin-bottom: 10px;
+}
+.card .card-footer {
+  background-color: #fff;
+  border-top: none;
+}
+.card .card-header {
+  background-color: transparent;
+  border-bottom: none;
+  padding: 25px 20px;
+}
+.card .card-header .card-header-left {
+  display: inline-block;
+}
+.card .card-header .card-header-right {
+  border-radius: 0 0 0 7px;
+  right: 10px;
+  top: 18px;
+  display: inline-block;
+  float: right;
+  padding: 7px 0;
+  position: absolute;
+}
+.card .card-header .card-header-right i {
+  margin: 0 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #505458;
+  line-height: 20px;
+}
+.card .card-header .card-header-right i.icofont.icofont-spinner-alt-5 {
+  display: none;
+}
+.card .card-header .card-header-right .card-option {
+  width: 35px;
+  height: 20px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.card .card-header .card-header-right .card-option li {
+  display: inline-block;
+}
+.card .card-header span {
+  color: #919aa3;
+  display: block;
+  font-size: 13px;
+  margin-top: 5px;
+}
+.card .card-header + .card-block,
+.card .card-header + .card-block-big {
+  padding-top: 0;
+}
+.card .card-header h5 {
+  margin-bottom: 0;
+  color: #505458;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 10px;
+  line-height: 1.4;
+}
+.card .card-block table tr {
+  padding-bottom: 20px;
+}
+.card .card-block .sub-title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.card .card-block code {
+  background-color: #eee;
+  margin: 5px;
+  display: inline-block;
+}
+.card .card-block .dropdown-menu {
+  top: 38px;
+}
+.card .card-block p {
+  line-height: 25px;
+}
+.card .card-block a.dropdown-item {
+  margin-bottom: 0;
+  font-size: 14px;
+  transition: 0.25s;
+}
+.card .card-block a.dropdown-item:active,
+.card .card-block a.dropdown-item .active {
+  background-color: #4680ff;
+}
+.card .card-block.remove-label i {
+  margin: 0;
+  padding: 0;
+}
+.card .card-block.button-list span.badge {
+  margin-left: 5px;
+}
+.card .card-block .dropdown-menu {
+  background-color: #fff;
+  padding: 0;
+}
+.card .card-block .dropdown-menu .dropdown-divider {
+  background-color: #ddd;
+  margin: 3px 0;
+}
+.card .card-block .dropdown-menu > a {
+  padding: 10px 16px;
+  line-height: 1.429;
+}
+.card .card-block .dropdown-menu > li > a:focus,
+.card .card-block .dropdown-menu > li > a:hover {
+  background-color: rgba(202, 206, 209, 0.5);
+}
+.card .card-block .dropdown-menu > li:first-child > a:first-child {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.card .card-block .badge-box {
+  padding: 10px;
+  margin: 12px 0;
+}
+.card .card-block-big {
+  padding: 30px 35px;
+}
+.card .card-block-small {
+  padding: 15px 20px;
+  min-width: 150px;
+}
+
+.card-progress .progress {
+  height: 8px;
+  width: 100%;
+  position: relative;
+  top: 8px;
+  left: 0;
+  border-radius: 0;
+  overflow: inherit;
+}
+
+.progress {
+  height: 1rem;
+}
+
+.progress .progress-bar {
+  height: 100% !important;
+}
+
+.justify-content-space {
+  justify-content: space-between;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+/* Bg Color Start */
+
+.bg-black{
+  background-color: black;
+}
+
+.bg-white{
+  background-color: white;
+}
+
+.bg-gray {
+  background-color: #919aa3;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.bg-yellow {
+  background-color: #fae315;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-blue {
+  background-color: #4680ff;
+}
+
+.bg-primary {
+  background-color: #4680ff !important;
+  color: #fff;
+}
+.bg-light-blue {
+  background-color: #2a3544 !important;
+  color: rgb(112, 112, 112);
+}
+
+.bg-finished{
+  background: linear-gradient(45deg, black, #00ff2a);
+}
+
+.bg-not-start{
+  background: linear-gradient(45deg, black, #0084ff);
+}
+
+.bg-pass-day{
+  background: linear-gradient(45deg, black, #ff0000);
+}
+
+.bg-continuing{
+  background: linear-gradient(45deg, black, #ffb500);
+}
+
+
+.bg-warning {
+  background-color: #FFB64D !important;
+  color: #fff;
+}
+
+.bg-default {
+  background-color: #e0e0e0 !important;
+  color: #fff;
+}
+
+.bg-danger {
+  background-color: #FC6180 !important;
+  color: #fff;
+}
+
+.bg-success {
+  background-color: #93BE52 !important;
+  color: #fff;
+}
+
+.bg-inverse {
+  background-color: #303548 !important;
+  color: #fff;
+}
+
+.bg-info {
+  background-color: #62d1f3 !important;
+  color: #fff;
+}
+
+.bg-black-t-20{
+  background-color: hsla(0, 0%, 0%, 0.20);
+}
+
+.bg-black-t-40{
+  background-color: hsla(0, 0%, 0%, 0.40);
+}
+
+.bg-black-t-60{
+  background-color: hsla(0, 0%, 0%, 0.60);
+}
+
+/* Bg Color End */
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+.border-left-red-5 {
+  border-left: 5px solid red;
+}
+
+.border-left-orange-5 {
+  border-left: 5px solid orange;
+}
+.border-left-green-5 {
+  border-left: 5px solid green;
+}
+.border-left-blue-5 {
+  border-left: 5px solid #4680ff;
+}
+
+.border-radius-5{
+  border-radius: 5px;
+}
+
+/**  =====================
+      Label-Badges css start
+==========================  **/
+.label {
+  border-radius: 4px;
+  font-size: 75%;
+  padding: 4px 7px;
+  margin-right: 5px;
+  font-weight: 400;
+  color: #fff !important;
+}
+
+.label-main {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 8px 5px;
+}
+
+.badge {
+  border-radius: 10px;
+  padding: 3px 7px;
+}
+
+.badge-top-left {
+  margin-right: -10px;
+  right: 100%;
+  top: -3px;
+}
+
+.badge-top-right {
+  margin-left: -10px;
+  top: -3px;
+}
+
+.badge-bottom-left {
+  margin-left: -33px;
+  bottom: -12px;
+  right: 97%;
+}
+
+.badge-bottom-right {
+  margin-left: -10px;
+  bottom: -12px;
+}
+
+.label.label-lg {
+  padding: 8px 21px;
+}
+
+.label.label-md {
+  padding: 6px 14px;
+}
+
+.badge-lg {
+  padding: 5px 9px;
+  font-size: 14px;
+}
+
+.badge-md {
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+span.badge {
+  display: inline-block !important;
+}
+
+.label-default {
+  background-color: #e0e0e0 !important;
+  border-color: #e0e0e0;
+  box-shadow: none;
+  color: #fff;
+}
+
+.label-inverse-default {
+  border: 1px solid;
+  border-color: #e0e0e0;
+  color: #e0e0e0 !important;
+}
+
+.label-inverse-primary {
+  border: 1px solid;
+  border-color: #4680ff;
+  color: #4680ff !important;
+}
+
+.label-inverse-success {
+  border: 1px solid;
+  border-color: #93be52;
+  color: #93be52 !important;
+}
+
+.label-inverse-warning {
+  border: 1px solid;
+  border-color: #ffb64d;
+  color: #ffb64d !important;
+}
+
+.label-inverse-danger {
+  border: 1px solid;
+  border-color: #fc6180;
+  color: #fc6180 !important;
+}
+
+.label-inverse-info {
+  border: 1px solid;
+  border-color: #62d1f3;
+  color: #62d1f3 !important;
+}
+
+.label-inverse-info-border {
+  border: 1px solid;
+  border-color: #303548;
+  color: #303548 !important;
+}
+
+.badge-inverse-default {
+  border: 1px solid;
+  border-color: #e0e0e0;
+  color: #e0e0e0 !important;
+}
+
+.badge-inverse-primary {
+  border: 1px solid;
+  border-color: #4680ff;
+  color: #4680ff !important;
+}
+
+.badge-inverse-success {
+  border: 1px solid;
+  border-color: #93be52;
+  color: #93be52 !important;
+}
+
+.badge-inverse-warning {
+  border: 1px solid;
+  border-color: #ffb64d;
+  color: #ffb64d !important;
+}
+
+.badge-inverse-danger {
+  border: 1px solid;
+  border-color: #fc6180;
+  color: #fc6180 !important;
+}
+
+.badge-inverse-info {
+  border: 1px solid;
+  border-color: #303548;
+  color: #303548 !important;
+}
+
+.label-icon {
+  position: relative;
+}
+.label-icon label {
+  position: absolute;
+}
+
+.icofont.icofont-envelope {
+  font-size: 20px;
+}
+
+/*===== Label and Badges css end =====*/
+
+/*======= Label-color css starts  ======= */
+.label {
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.label-primary {
+  background-color: #4680ff;
+}
+
+.label-warning {
+  background-color: #ffb64d;
+}
+
+.label-default {
+  background-color: #e0e0e0;
+}
+
+.label-danger {
+  background-color: #fc6180;
+}
+
+.label-success {
+  background-color: #93be52;
+}
+
+.label-inverse {
+  background-color: #303548;
+}
+
+.label-info {
+  background-color: #62d1f3;
+}
+
+.label-warning {
+  color: #fff;
+}
+
+/*======= Label-color css starts  ======= */
+/*======= Badge-color css starts  ======= */
+.badge-primary {
+  background-color: #4680ff;
+}
+
+.badge-warning {
+  background-color: #ffb64d;
+}
+
+.badge-default {
+  background-color: #e0e0e0;
+}
+
+.badge-danger {
+  background-color: #fc6180;
+}
+
+.badge-success {
+  background-color: #93be52;
+}
+
+.badge-inverse {
+  background-color: #303548;
+}
+
+.badge-info {
+  background-color: #62d1f3;
+}
+
+/*======= Badge-color css end  ======= */
+
+.app-design .progress-box p {
+  margin-bottom: 0;
+}
+
+.app-design .progress-box .progress {
+  width: calc(100% - 80px);
+  height: 8px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #e5e5e5;
+  border-radius: 30px;
+  position: relative;
+  overflow: inherit;
+}
+
+.app-design .progress-box .progress .progress-bar {
+  border-radius: 30px;
+}
+
+.app-design .progress-box .progress .progress-bar label {
+  position: absolute;
+  top: -24px;
+  right: 0;
+  color: #222;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.info-work table{
+  width: 100%;
+  border: 1px solid gray;
+}
+
+.info-work table tr{
+  border-bottom: 1px solid gray;
+}

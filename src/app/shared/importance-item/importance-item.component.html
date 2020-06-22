@@ -1,0 +1,26 @@
+<div class="p-r-20 p-l-20">
+  <div class="card m-b-10 bg-default">
+    <div class="card-block text-white text-center">
+      <div class="d-flex flex-column p-2">
+        <div class="text-right full-width d-flex justify-content-space">
+          <label class="text-muted">{{getImportanceValue(importanceValue)}}</label>
+          <label class="text-muted m-0">{{avarage}}</label>
+        </div>
+        <div class="progress bg-white border-radius-5">
+          <div class="progress-bar border-radius-5"
+          [ngClass]="
+          {
+            'bg-red':enumImportance.Critical == importanceValue,
+            'bg-orange':enumImportance.Important==importanceValue,
+            'bg-blue':enumImportance.Normal==importanceValue,
+            'bg-green':enumImportance.Insignificant==importanceValue
+          }"
+          [ngStyle]="{'width.%':percent}">{{percent | number :'1.2-2'}}</div>
+        </div>
+        <!-- <div class="text-right">
+          <label class="text-muted m-0">{{avarage}}</label>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>

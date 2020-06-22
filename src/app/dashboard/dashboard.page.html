@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+<div class="full-height">
+  
+  <div class="p-2">
+    <ion-segment value="dash" color="dark" (ionChange)="showPanel = $event.detail.value" class="m-b-10">
+      <ion-segment-button value="dash" layout="icon-bottom">
+        <i class="fas fa-chart-line p-b-10"></i>
+        <p style="text-transform: none;">Dashboard Görünüm</p>
+      </ion-segment-button>
+      <ion-segment-button value="list" layout="icon-bottom">
+        <i class="fas fa-list p-b-10"></i>
+        <p style="text-transform: none;">Liste Görünüm</p>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div *ngIf="showPanel == 'dash'" style="height: calc(100% - (65px + 1rem)); overflow: scroll;">
+    <app-view-dash [listWork]="listWork"></app-view-dash>
+  </div>
+  <div *ngIf="showPanel == 'list'">
+    <app-view-list [listWork]="listWork"></app-view-list>
+  </div>
+
+</div>
+</ion-content>

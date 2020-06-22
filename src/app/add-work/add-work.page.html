@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Görev Ekleme Alanı
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<div class="full-height bg-default">
+
+  <form [formGroup]="groupWork" (ngSubmit)="saveWork()" class="full-height p-2">
+
+    <ion-item class="border-radius-5 m-b-5">
+      <ion-label position="floating">Görev Adı *</ion-label>
+      <ion-input [(ngModel)]="work.name" formControlName="name"></ion-input>
+    </ion-item>
+    
+    <ion-item class="border-radius-5 m-b-5">
+      <ion-label position="floating">Açıklama</ion-label>
+      <ion-textarea [(ngModel)]="work.description" formControlName="description" rows="4" cols="20"
+        placeholder="Açıklama..."></ion-textarea>
+    </ion-item>
+
+    <ion-item class="border-radius-5 m-b-5">
+      <ion-label>Önem Derecesi *</ion-label>
+      <ion-select [(ngModel)]="work.importance" formControlName="importance" placeholder="Select One">
+        <ion-select-option value=1>Önemsiz</ion-select-option>
+        <ion-select-option value=2>Normal</ion-select-option>
+        <ion-select-option value=3>Önemli</ion-select-option>
+        <ion-select-option value=4>Kritik</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item class="border-radius-5 m-b-10">
+      <ion-label position="floating">Görev Tarihi *</ion-label>
+      <ion-datetime [(ngModel)]="work.workDate" formControlName="workDate"
+        monthShortNames="Ocak, Şubat, Mart, Nisan, Mayıs, Haziran, Temmuz, Ağustos, Eylül, Ekim, Kasım, Aralık"
+        value="2019-10-01T15:43:40.394Z" display-timezone="utc"></ion-datetime>
+    </ion-item>
+
+    <ion-button expand="full" color="primary" type="submit">Görev Oluştur</ion-button>
+  </form>
+
+</div>
+
+
+
+
+</ion-content>

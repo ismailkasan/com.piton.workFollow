@@ -1,0 +1,49 @@
+<div class="p-2 p-t-0 p-b-0">
+  <div class="card m-b-10 text-black bg-white" 
+  [ngClass]="{'border-left-red-5': status == enumStatus.PassDay, 
+              'border-left-orange-5': status == enumStatus.Continuing,
+              'border-left-green-5': status == enumStatus.Finished,
+              'border-left-blue-5':status == enumStatus.NotStart
+             }">
+    <div class="card-block-small text-center p-2">
+        <h4 class="text-left p-l-10 f-14">{{workName}}</h4>
+        <div class="d-flex justify-content-space">
+          <div class="p-l-10">
+            <span class="f-12 label"
+            [ngClass]="
+            {
+              'label-inverse-danger':importance == enumImportance.Critical,
+              'label-inverse-warning':importance == enumImportance.Important,
+              'label-inverse-success':importance == enumImportance.Insignificant,
+              'label-inverse-primary':importance == enumImportance.Normal
+            }
+            "
+            >
+              <!-- TODO:
+                Directive yazılacak.
+                Parametre göderilip importance enum karşılığı switch case kontrolü ile string karşılığı döndürülecek 
+              -->
+              {{importance == enumImportance.Critical ? 'Kritik': ''}}
+              {{importance == enumImportance.Important ? 'Önemli': ''}}
+              {{importance == enumImportance.Insignificant ? 'Önemsiz': ''}}
+              {{importance == enumImportance.Normal ? 'Normal': ''}}
+            </span>
+            <span class="f-12">{{workDate | date :'yyyy-MM-dd'}}</span>
+          </div>
+          <div class="d-flex">
+            <div class="label bg-black-t-60">
+              <i (click)="deleteWork(workId)" class="fas fa-trash f-14"></i>
+            </div>
+            <div (click)="infoWork(workId)" class="label bg-black-t-60">
+              <i class="fas fa-info-circle f-14"></i>
+            </div>
+            <div *ngIf="status == enumStatus.NotStart || status == enumStatus.PassDay || status == enumStatus.Continuing" class="label bg-black-t-60">
+              <i (click)="startWork(workId)" *ngIf="status == enumStatus.NotStart || status == enumStatus.PassDay" class="fas fa-play f-14"></i>
+              <i (click)="finishWork(workId)" *ngIf="status == enumStatus.Continuing" class="fas fa-check f-14"></i>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+<div class="d-flex flex-column align-items-center">
+<div class="d-flex full-width justify-content-center">
+    <div class="card bg-finished m-r-10">
+        <div class="card-block-small text-white text-center">
+            <h2>{{finishedCount}}</h2>
+            <h6>Tamamlanmış</h6>
+        </div>
+    </div>
+    
+    <div class="card bg-continuing">
+        <div class="card-block-small text-white text-center">
+            <h2>{{continuingCount}}</h2>
+            <h6>Devam Eden</h6>
+        </div>
+    </div>
+</div>
+<div class="d-flex full-width justify-content-center">
+    <div class="card bg-pass-day m-r-10">
+        <div class="card-block-small text-white text-center">
+            <h2>{{passDayCount}}</h2>
+            <h6>Günü Geçmiş</h6>
+        </div>
+    </div>
+    
+    <div class="card bg-not-start">
+        <div class="card-block-small text-white text-center">
+            <h2>{{notStartCount}}</h2>
+            <h6>Başlanmamış</h6>
+        </div>
+    </div>
+</div>
+
+
+<!-- 
+    İmportance AREA
+ -->
+ <div class="d-flex flex-column full-width justify-content-center">
+
+    
+    <app-importance-item 
+    [percent]="getImportanceDetail(enumImportance.Insignificant) / totalCount * 100"
+    [avarage]="getImportanceDetail(enumImportance.Insignificant) +'/'+ totalCount"
+    [importanceValue]="enumImportance.Insignificant"
+    ></app-importance-item>
+
+    <app-importance-item
+    [percent]="getImportanceDetail(enumImportance.Normal) / totalCount * 100"
+    [avarage]="getImportanceDetail(enumImportance.Normal) +'/'+ totalCount"
+    [importanceValue]="enumImportance.Normal"
+    ></app-importance-item>
+
+    
+    <app-importance-item 
+    [percent]="getImportanceDetail(enumImportance.Important) / totalCount * 100"
+    [avarage]="getImportanceDetail(enumImportance.Important) +'/'+ totalCount"
+    [importanceValue]="enumImportance.Important"
+    ></app-importance-item>
+
+    <app-importance-item
+    [percent]="getImportanceDetail(enumImportance.Critical) / totalCount * 100"
+    [avarage]="getImportanceDetail(enumImportance.Critical) +'/'+ totalCount"
+    [importanceValue]="enumImportance.Critical"
+    ></app-importance-item>
+    
+    
+ </div>
+</div>

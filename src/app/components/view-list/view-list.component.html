@@ -1,0 +1,39 @@
+<div class="d-flex flex-row m-b-20 justify-content-center">
+
+  <div class="label-main m-0" (click)="getFilterList(1)">
+    <label class="label label-lg label-primary">Günlük</label>
+  </div>
+
+  <div class="label-main m-0" (click)="getFilterList(2)">
+    <label class="label label-lg label-primary">Haftalık</label>
+  </div>
+
+  <div class="label-main m-0" (click)="getFilterList(3)">
+    <label class="label label-lg label-primary">Aylık</label>
+  </div>
+
+  <div class="label-main m-0" (click)="getFilterList(4)">
+    <label class="label label-lg label-primary">Tümü</label>
+  </div>
+
+
+  <!--
+
+     TODO: Özelleştirilmiş filtre aktif edilecek. Kullanıcı isterse,
+        görevin önemine göre, görevin durumuna göre veya iki tarih arası görevleri listeleme işlemi yapabilecek.
+
+        <div class="label-main">
+          <label class="label label-lg label-primary"><i class="fas fa-filter"></i></label>
+        </div>
+
+   -->
+
+
+
+</div>
+<div class="d-flex flex-column" style="height: calc(100% - 70px); overflow: scroll;">
+
+  <app-work-item *ngFor="let item of listWork" [workName]="item.name" [importance]="item.importance"
+    [status]="item.status" [workDate]="item.workDate" [workId]="item.id"></app-work-item>
+
+</div>
